@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de IMC - Calcule seu Índice de Massa Corporal de forma rápida e precisa.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Icons (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <title>Calculadora de IMC</title>
+</head>
+<body class="page-body">
+    <main class="container">
+        <!-- Hero Section com a Calculadora -->
+        <section class="calculator-section">
+            <div class="content-wrapper">
+                
+                <div class="hero-content">
+                    <h1 class="hero-title">Descubra seu <span class="text-primary">IMC</span></h1>
+                    <p class="hero-description">
+                        Calcule seu Índice de Massa Corporal e entenda melhor sobre sua saúde e bem-estar.
+                    </p>
+                    <div class="hero-image-box">
+                        <img src="./assets/img/hero-image.svg" alt="Ilustração de saúde" class="hero-image">
+                    </div>
+                </div>
+
+                <div class="calculator-box">
+                    <form class="calculator-form" id="imc-form">
+                        <div class="form-header">
+                            <i class="fa-solid fa-calculator"></i>
+                            <h2 class="form-title">Calculadora</h2>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weight">Peso (kg)</label>
+                            <div class="input-box">
+                                <i class="fa-solid fa-weight-hanging"></i>
+                                <input type="number" id="weight" placeholder="Ex: 70" step="0.1" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="height">Altura (m)</label>
+                            <div class="input-box">
+                                <i class="fa-solid fa-ruler-vertical"></i>
+                                <input type="number" id="height" placeholder="Ex: 1.70" step="0.01" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-calculate">
+                            Calcular IMC
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <!-- Result Area -->
+                    <div class="result-container hidden" id="result-container">
+                        <div class="result-display">
+                            <span id="bmi-value">0.0</span>
+                            <p>Seu IMC</p>
+                        </div>
+                        
+                        <div class="result-status">
+                            <div id="bmi-badge" class="badge">
+                                <span id="bmi-description">---</span>
+                            </div>
+                        </div>
+
+                        <!-- Scale Bar -->
+                        <div class="imc-scale">
+                            <div class="scale-labels">
+                                <span>Magreza</span>
+                                <span>Ideal</span>
+                                <span>Sobrepeso</span>
+                            </div>
+                            <div class="scale-bar">
+                                <div id="imc-indicator" class="scale-indicator"></div>
+                            </div>
+                        </div>
+                        
+                        <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm" target="_blank" rel="noopener noreferrer" class="more-info-link">
+                            Saber mais <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
