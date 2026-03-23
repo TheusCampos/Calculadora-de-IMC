@@ -63,4 +63,4 @@ Quer ver como funciona ou explorar o código? É bem simples!
 ---
 
 
-**Feito porMatheus Campos**
+**Feito por Matheus Campos**
