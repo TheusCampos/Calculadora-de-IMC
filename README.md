@@ -62,6 +62,5 @@ Quer ver como funciona ou explorar o código? É bem simples!
 
 ---
 
-Espero que este projeto sirva como um bom exemplo e ponto de partida para seus próprios estudos em desenvolvimento Front-End! Sinta-se à vontade para explorar, dar sugestões ou usar o código como inspiração. Se tiver alguma dúvida, pode abrir uma issue no repositório.
 
-**Feito com ❤️ por [Seu Nome/Seu Usuário do GitHub]**
+**Feito porMatheus Campos**
